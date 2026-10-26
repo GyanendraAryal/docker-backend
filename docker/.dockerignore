@@ -1,0 +1,71 @@
+# Git
+.git
+.gitignore
+
+# ==========================================
+# Python / Django Specific
+# ==========================================
+venv/
+.venv/
+env/
+ENV/
+pyvenv.cfg
+.python-version
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django data & assets
+*.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+
+# ==========================================
+# Node / React Specific
+# ==========================================
+# Never upload heavy local dependencies
+node_modules/
+.npm/
+
+# React build outputs (built inside the container instead)
+dist/
+build/
+.next/
+out/
+
+# Log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ==========================================
+# Security & Credentials (CRITICAL)
+# ==========================================
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+secrets.json
+*.pem
+*.key
+
+# ==========================================
+# DevOps & Tools
+# ==========================================
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS / IDEs
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
